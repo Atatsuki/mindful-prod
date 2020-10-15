@@ -41,4 +41,8 @@ Github issues has been created for contributions that can be made to this projec
     ## Ground Rules
 
     - **Notify the moderator if you want to add more issues / Enhancement**
-    - **Only modify the file / folder of the issue **
+    - **Only modify the file / folder of the issue you are working on**
+
+    ## Do you feel like this Readme is incomplete?
+
+    Please feel free to notify me in the issue created for this to add more.
