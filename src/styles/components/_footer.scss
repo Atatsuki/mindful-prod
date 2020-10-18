@@ -1,0 +1,127 @@
+footer {
+  //background: $mainColor;
+  color: $whiteColor;
+  background: linear-gradient(222.69deg, #FFFFFF -92.93%, rgba(39, 23, 23, 0.973958) -92.91%, rgba(52, 37, 37, 0.914998) -75.33%, rgba(56, 41, 41, 0.897958) -41.9%, rgba(255, 255, 255, 0) 27.61%, rgba(32, 34, 39, 0.386463) 76.01%), #3C73C6;
+
+
+  width: 100%;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 90%;
+
+  padding: 3rem 0 1rem;
+
+  &__flex {
+    @media screen and (min-width:800px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__notes {
+    &--text {
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
+
+    &--p {
+      padding: 1rem 0;
+      line-height: 1.5rem;
+    }
+  }
+
+  &__email {
+    padding: 2rem 0;
+
+    &--mail {
+      font-weight: lighter;
+      padding-bottom: 1rem;
+    }
+
+    &--input {
+      padding: .5rem;
+      border-radius: 25px 0 0 25px;
+      font-size: 1rem;
+
+      border-color: $whiteColor;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &--btn {
+      padding: .5rem;
+      border-radius: 0 25px 25px 0;
+
+      border: 1px solid $headerColor;
+      color: $whiteColor;
+      background: $headerColor;
+
+      font-size: 1rem;
+
+      &:hover {
+        transition: 1s ease-in-out;
+        cursor: pointer;
+        border: 1px solid $mainColor;
+        background: $mainColor;
+        color: $whiteColor;
+      }
+    }
+  }
+
+  &__grid {
+    padding-top: 2rem;
+
+    @media screen and (min-width: 800px) {
+      // display: grid;
+      // grid-template-columns: repeat(4, 1fr);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 2rem 0;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+  }
+
+  &__logo {
+    &--p {
+      padding: 1rem 0 1.5rem;
+      line-height: 1.5rem;
+
+      @media screen and (min-width: 800px) {
+        width: 70%;
+      }
+    }
+  }
+
+  &__quick-links,
+  &__services,
+  &__socials {
+    padding-bottom: 1.5rem;
+
+    li {
+      padding-bottom: 1rem;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $headerColor;
+        transition: 2s ease-in-out;
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+}

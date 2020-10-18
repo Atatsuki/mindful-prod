@@ -1,0 +1,89 @@
+.body {
+  margin: 0 auto;
+  width: 90%;
+
+  padding: 2rem 0;
+
+  color: $headerTextColor;
+
+
+
+  &__flex {
+    @media screen and (min-width: 900px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+
+  &__title {
+    text-align: center;
+
+    @media screen and (max-width: 800px) {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    &--title {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__li {
+    li {
+      padding-bottom: .5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  // image div
+  &__img {
+
+    &--layer {
+      position: relative;
+    }
+
+    //padding-top: 3rem;
+
+    &--grey-temp {
+
+      display: block;
+
+    }
+
+    &--blue-temp {
+      left: 1.5rem;
+      top: 0;
+      position: absolute;
+    }
+
+    &--people-img {
+      left: 2rem;
+      top: 6rem;
+      position: absolute;
+    }
+  }
+
+  &__cta {
+    margin-top: 1rem;
+    padding: 1rem;
+
+    border-radius: 25px;
+    border: 1px solid $headerColor;
+
+    background: $whiteColor;
+    color: $headerTextColor;
+
+    font-size: 1rem;
+
+    &:hover {
+      cursor: pointer;
+      background: $headerColor;
+      color: $whiteColor;
+      transition: 2s ease-in-out;
+    }
+  }
+
+}
