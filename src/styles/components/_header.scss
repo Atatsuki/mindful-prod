@@ -105,21 +105,22 @@ header {
     &--li:last-child {
 
       @media screen and (min-width: 650px) {
-        border: 2px solid #000;
+        border: 2px solid $whiteColor;
         border-radius: 25px;
       }
 
       @media screen and (max-width: 650px) {
         padding: 1rem 0;
-        border: 2px solid #000;
+        border: 2px solid $whiteColor;
         border-radius: 25px;
       }
 
     }
 
     &--li:last-child:hover {
-      background: #000;
-      color: $whiteColor;
+      background: $whiteColor;
+      color: $headerColor;
+      transition: 2s ease-in-out;
       text-decoration: none;
 
     }

@@ -1,8 +1,6 @@
 footer {
-  //background: $mainColor;
   color: $whiteColor;
   background: linear-gradient(222.69deg, #FFFFFF -92.93%, rgba(39, 23, 23, 0.973958) -92.91%, rgba(52, 37, 37, 0.914998) -75.33%, rgba(56, 41, 41, 0.897958) -41.9%, rgba(255, 255, 255, 0) 27.61%, rgba(32, 34, 39, 0.386463) 76.01%), #3C73C6;
-
 
   width: 100%;
 }
@@ -76,13 +74,18 @@ footer {
   &__grid {
     padding-top: 2rem;
 
-    @media screen and (min-width: 800px) {
-      // display: grid;
-      // grid-template-columns: repeat(4, 1fr);
 
+    @media screen and (min-width: 1100px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    @media screen and (max-width:1100px) and (min-width: 800px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      grid-gap: 5rem;
 
       padding: 2rem 0;
     }
@@ -98,8 +101,10 @@ footer {
       padding: 1rem 0 1.5rem;
       line-height: 1.5rem;
 
-      @media screen and (min-width: 800px) {
-        width: 70%;
+      @media screen and (max-width:1100px) and (min-width: 800px) {
+        padding: 1rem 0;
+        line-height: 1.5rem;
+
       }
     }
   }
