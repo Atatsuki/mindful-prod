@@ -24,7 +24,9 @@ function Header() {
               <li className="header__links--li">Home</li>
               <li className="header__links--li">FAQS</li>
               <li className="header__links--li">About</li>
-              <li className="header__links--li">Login</li>
+              <li className="header__links--li">
+                <a href="/login">Login</a>
+              </li>
             </ul>
           </div>
           <div onClick={handleClick} role="menuitem" className="header__icon">

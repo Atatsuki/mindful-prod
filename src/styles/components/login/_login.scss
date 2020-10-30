@@ -1,0 +1,59 @@
+.login {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem 0;
+
+  &__grid {
+    @media screen and (min-width:$width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+
+  &__content {
+    @media screen and (max-width: $width) {
+      padding-top: 2rem;
+    }
+
+    &--heading {
+      font-size: 64px;
+      line-height: 96px;
+      color: $headerTextColor;
+    }
+
+    &--note {
+      font-size: 30px;
+      line-height: 45px;
+      padding-bottom: 2rem;
+    }
+  }
+
+
+  &__input {
+    // background: rgba(34, 69, 135, 0.47);
+    width: fit-content;
+    padding: 1rem 0;
+    color: #fff;
+    // width: 677px;
+    // height: 112px;
+
+    &--flex {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &--field {
+      padding: 0 1rem;
+
+      input {
+        font-size: 2rem;
+        color: #fff;
+
+        outline: 0;
+        border: none;
+
+      }
+    }
+  }
+}

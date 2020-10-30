@@ -104,6 +104,11 @@ header {
 
     &--li:last-child {
 
+      a {
+        text-decoration: none;
+        color: $whiteColor;
+      }
+
       @media screen and (min-width: 650px) {
         border: 2px solid $whiteColor;
         border-radius: 25px;
