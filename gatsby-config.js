@@ -32,4 +32,12 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
   plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+  ],
 }
