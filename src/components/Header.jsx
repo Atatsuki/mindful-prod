@@ -29,7 +29,13 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div onClick={handleClick} role="menuitem" className="header__icon">
+          <div
+            onClick={handleClick}
+            onKeyDown={handleClick}
+            role="menuitem"
+            tabIndex={0}
+            className="header__icon"
+          >
             {state ? <CloseIcon /> : <MenuIcon />}
           </div>
         </div>
