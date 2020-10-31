@@ -35,18 +35,14 @@ function ContentSection() {
     color: #3c73c6;
     text-decoration: none;
   `
-
   return (
     <div className="login__content">
-      {" "}
-      <h1 className="login__content--heading">Welcome Back</h1>{" "}
+      <h1 className="login__content--heading">Welcome Back</h1>
       <p className="login__content--note">
-        {" "}
         To stay connected Please login with your personal information by email
-        address and password{" "}
-      </p>{" "}
+        address and password
+      </p>
       <div className="login__input" style={shapeOne}>
-        {" "}
         <InputField
           title="Email Address"
           inputStyle={colorOne}
@@ -54,10 +50,9 @@ function ContentSection() {
           iconAlt="Email"
           type="email"
           placeholder="Johndoe@gmail.com"
-        />{" "}
-      </div>{" "}
+        />
+      </div>
       <div className="login__input" style={shapeTwo}>
-        {" "}
         <InputField
           title="Password"
           inputStyle={colorTwo}
@@ -65,41 +60,35 @@ function ContentSection() {
           iconAlt="Lock"
           type="password"
           placeholder="000000"
-        />{" "}
-      </div>{" "}
+        />
+      </div>
       <div className="login__flex">
-        {" "}
         <div
           className="login__flex--checkbox"
           style={{
             color: check && "#224587",
           }}
         >
-          {" "}
           <input
             onClick={handleCheck}
             type="checkbox"
             id="rememberMe"
             name="rememberMe"
-          />{" "}
+          />
           <label className="login__flex--checkbox--label" for="rememberMe">
-            {" "}
-            Remember Me{" "}
-          </label>{" "}
-        </div>{" "}
-        <p className="login__flex--forgotPassword">Forgot Password ?</p>{" "}
-      </div>{" "}
+            Remember Me
+          </label>
+        </div>
+        <p className="login__flex--forgotPassword">Forgot Password ?</p>
+      </div>
       <div className="login__flex--btn">
-        {" "}
         <button className="login__flex--btn-login" type="submit">
-          {" "}
-          Login{" "}
-        </button>{" "}
+          Login
+        </button>
         <button className="login__flex--btn-register">
-          {" "}
-          <StyledLink to="/register">Create Account</StyledLink>{" "}
-        </button>{" "}
-      </div>{" "}
+          <StyledLink to="/register">Create Account</StyledLink>
+        </button>
+      </div>
     </div>
   )
 }

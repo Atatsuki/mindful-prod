@@ -31,13 +31,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-  plugins: [`gatsby-plugin-sass`],
-  plugins: [
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
-  ],
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
 }
