@@ -1,7 +1,7 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import MenuIcon from "@material-ui/icons/Menu"
 import CloseIcon from "@material-ui/icons/Close"
-
 import Nav from "../SubComponents/Nav"
 
 function Header() {
@@ -21,7 +21,9 @@ function Header() {
               className="header__links--ul"
               style={{ transform: state && "translateX(0)" }}
             >
-              <li className="header__links--li">Home</li>
+              <li className="header__links--li">
+                <Link to="/">Home</Link>
+              </li>
               <li className="header__links--li">FAQS</li>
               <li className="header__links--li">About</li>
               <li className="header__links--li">
@@ -29,7 +31,13 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div onClick={handleClick} role="menuitem" className="header__icon">
+          <div
+            onClick={handleClick}
+            onKeyDown={handleClick}
+            role="menuitem"
+            tabIndex={0}
+            className="header__icon"
+          >
             {state ? <CloseIcon /> : <MenuIcon />}
           </div>
         </div>
