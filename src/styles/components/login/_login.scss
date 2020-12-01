@@ -127,17 +127,11 @@
     //color: #c4c4c4c4;
     color: #000;
     width: 677px;
-    // height: 112px;
 
     @media screen and (max-width:650px) {
       width: fit-content;
       padding: 1rem;
     }
-
-    // @media screen and (min-width:650px) and (max-width:1200px) {
-    //   width: 100%;
-    //   padding: 1rem;
-    // }
 
     &--flex {
       display: flex;
